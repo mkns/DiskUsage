@@ -24,11 +24,16 @@
 					fileEntryListener="#{fileEntryController.listener}" />
 				<h:commandButton value="Go" id="submit_button"></h:commandButton>
 			</h:form>
-			
+			<h:form>
+				<h:commandLink action="#{fileEntryController.resetDisplayedBean}">
+					<h:outputText value="Reset"></h:outputText>
+				</h:commandLink>
+			</h:form>
 			#{fileEntryController.displayedBeanInfo}
 				<h:form>
 				<h:dataTable value="#{fileEntryController.displayedBeanChildren}"
-					var="child" cellpadding="3" cellspacing="0" border="1" columnClasses="right">
+					var="child" cellpadding="3" cellspacing="0" border="1"
+					columnClasses="right">
 					<h:column>
 						<h:outputText value="#{child.sizeInGb}"></h:outputText>
 					</h:column>

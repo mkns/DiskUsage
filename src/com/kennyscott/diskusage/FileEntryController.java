@@ -78,6 +78,10 @@ public class FileEntryController {
 			}
 		}
 	}
+	
+	public void resetDisplayedBean() {
+		displayedBean = null;
+	}
 
 	public DiskUsageBean getDiskUsageBean() {
 		return root;
