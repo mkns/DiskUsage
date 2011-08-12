@@ -78,7 +78,7 @@ public class FileEntryController {
 			}
 		}
 	}
-	
+
 	public void resetDisplayedBean() {
 		displayedBean = null;
 	}
@@ -95,7 +95,7 @@ public class FileEntryController {
 		if ( displayedBean == null ) {
 			displayedBean = root;
 		}
-		return displayedBean.getName() + ", " + displayedBean.getSizeInGb();
+		return displayedBean.getName() + ", " + displayedBean.getSizeInGb() + ", " + displayedBean.getSizeOfFileContents() + " of files";
 	}
 
 	public List<DiskUsageBean> getDisplayedBeanChildren() {

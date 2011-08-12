@@ -70,5 +70,17 @@ public class DiskUsageBean implements Serializable {
 		formatter.format( "%10.3f GB", gb );
 		return sb.toString();
 	}
+	
+	public String getSizeOfFileContents() {
+		int total = 0;
+		for ( DiskUsageBean directory : dirs.values() ) {
+			total += directory.getSize();
+		}
+		double remaining = ( ( double) size - total ) / 1000000;
+		StringBuilder sb = new StringBuilder();
+		Formatter formatter = new Formatter( sb, Locale.UK );
+		formatter.format( "%10.3f GB", remaining );
+		return sb.toString();
+	}
 
 }
