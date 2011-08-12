@@ -1,0 +1,43 @@
+#container {
+	background: none repeat scroll 0 0 #FFFFFF;
+	width: 650px;
+	margin: 0 auto;
+	border: thin #CCC dotted;
+}
+
+#header {
+	border: thin #CCC dotted;
+	width: 640px;
+	padding: 10px;
+}
+
+#navigator {
+	border: thin #CCC dotted;
+}
+
+#main_area {
+	float: left;
+	width: 640px;
+	padding: 10px;
+	border: thin #CCC dotted;
+}
+
+#left_bar {
+	float: left;
+	width: 200px;
+	padding: 10px;
+	border: thin #CCC dotted;
+}
+
+#footer {
+	clear: both;
+	padding: 5px 10px;
+	border: thin #CCC dotted;
+	color: #AAAAAA;
+	font-size: 8pt;
+	width: 640px;
+}
+
+.right {
+	text-align: right;
+}

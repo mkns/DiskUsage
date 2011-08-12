@@ -1,0 +1,10 @@
+The point of this app isn't really to measure the disk usage on my
+mac, although in fairness that is what it does.  In reality, I wrote
+it to help me understand JSF a little better.  Reading docs is all
+well and good, but it's when you actually try to write something that
+you really learn it, IMHO.  And so it transpired; it took quite a
+while to backtrack and remember what I'd previously read, and the
+resultant code is remarkably small considering what it's doing.
+However, that's a good thing for JSF, I reckon, as it does prove that
+you really don't need much code aside from your own business login.
+Sweet.
